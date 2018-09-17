@@ -1,0 +1,282 @@
+// ヘッダー
+
+header{
+  padding-left:90px;
+  margin-top:18px;
+  position:relative;
+}
+
+header ul{
+  overflow:hidden;
+}
+
+header li{
+  float:left;
+  list-style-type:none;
+}
+
+.noteheader1{
+  margin-right:645px;
+}
+
+.btn1{
+  font-weight:bold;
+  font-size:12px;
+  color:#787c7b;
+}
+
+.btn1:hover{
+  text-decoration:none;
+  color:black;
+}
+
+.btn2{
+  background-color:#2cb696;
+  border-color:#2cb696;
+  font-weight:bold;
+  font-size:12px;
+  width:80px;
+}
+
+.btn2:hover{
+  background-color:#25967c;
+  border-color:#25967c;
+}
+
+.btn2:active{
+  background-color:#25967c;
+  border-color:#25967c;
+}
+
+.icon1{
+  font-size:18px;
+  padding: 8px 8px 10px 18px;
+}
+
+// なぶばー1
+
+.navbar1{
+  overflow:hidden;
+  margin-left:195px;
+  margin-top: -10px;
+  width:940px;
+  border-bottom: #CCFFCC solid 1px;
+}
+
+.navbar1 li{
+  float:left;
+  list-style-type:none;
+  font-weight: bold;
+  color:#787c7b;
+  font-size:14px;
+  padding-right:16px;
+}
+
+.navbarli:hover{
+  color:black;
+}
+
+.icon2{
+  font-size:21px;
+  width: 21px;
+  height: 21px;
+  color:#BBBBBB;
+  margin-left:240px;
+  padding: 12px 0 0 28px;
+}
+
+.icon2:hover{
+  color:black;
+}
+
+// なぶばー２
+
+.navbar2{
+  padding-left:210px;
+  margin-top: -2px;
+  width:1500px;
+  border-bottom: rgba(0,0,0,0.15) solid 1.5px;
+}
+
+.navbar2 a{
+  font-size: 14px;
+  margin-right:13px;
+}
+
+// なぶばー３
+
+.navbar3{
+  overflow:hidden;
+  border-bottom: #CCFFCC solid 1px;
+  width:940px;
+  margin-left:205px;
+}
+
+.navbar3 li{
+  float:left;
+  list-style-type:none;
+  
+}
+
+.hensyubu{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left:-55px;
+  margin-top:30px;
+  margin-bottom:28px;
+}
+
+.icon3{
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color:#BBBBBB;
+  padding-left:755px;
+  padding-top:33px;
+  position:relative;
+}
+
+// メイン
+
+main{
+  float:left;
+}
+
+.mainside{
+  overflow:hidden;
+}
+
+.sidebar{
+  padding-top:1em;
+  padding-left:500px;
+}
+
+// ヘルプ
+
+.helpnav{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    width:600px;
+    margin-left:370px;
+    margin-top:45px;
+    padding-bottom:10px;
+}
+
+.yokuarusitumon{
+  margin-top:50px;
+  margin-left:370px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width:600px;
+  padding-bottom:30px;
+}
+
+.yokuarusitumon li{
+  font-size: 16px;
+  margin-bottom:7px;
+  letter-spacing: 0.5px;
+}
+
+.yokuarusitumonli{
+    color:black;
+}
+
+.yokuarusitumonli:hover{
+  text-decoration:none;
+  color:black;
+}
+
+.sitemap{
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width:550px;
+  margin-left:370px;
+  margin-top:40px;
+  padding-bottom:50px;
+}
+
+.sitemap p{
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    color: #787c7b;
+    margin-left:20px;
+}
+
+.sitemapwrap{
+  overflow:hidden;
+  margin-left:-20px;
+}
+
+.sitemap li{
+  float:left;
+  list-style:none;
+   margin-right: 18px;
+   margin-bottom: 12px;
+   font-size: 14px;
+}
+
+// 新規登録ページ
+
+.signuppage{
+  background-color:#f7f9f9;;
+}
+
+.noteheader2{
+  margin-top:35px;
+  margin-left:520px;
+  position:absolute;
+}
+
+.signup_container{
+  margin-top:90px;
+  margin-left:480px;
+  width:360px;
+  height:700px;
+  background-color:#FFF;
+  padding:20px;
+  border:solid 2px  rgba(0,0,0,0.05);
+}
+
+.signup_container p{
+   text-align: center;
+   font-size:22px;
+   font-weight:bold;
+   padding-top:22px;
+   letter-spacing: 0.5px;
+}
+
+// ログインページ
+
+.noteheader3{
+  margin-top:35px;
+  margin-left:540px;
+  position:absolute;
+}
+
+.login_container{
+  margin-top:90px;
+  margin-left:490px;
+  width:360px;
+  height:700px;
+  background-color:#FFF;
+  padding:20px;
+  border:solid 2px  rgba(0,0,0,0.05);
+}
+
+.login_p1{
+   text-align: center;
+   font-size:22px;
+   font-weight:bold;
+   padding-top:22px;
+   letter-spacing: 0.5px;
+   
+}
+
+.login_p2{
+  color:#898D8C;
+  text-align:center;
+  font-size:12px;
+  margin-top:-17px;
+}
