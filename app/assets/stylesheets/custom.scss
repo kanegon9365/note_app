@@ -239,13 +239,97 @@ main{
   border:solid 2px  rgba(0,0,0,0.05);
 }
 
-.signup_container p{
+.notetouroku{
    text-align: center;
    font-size:22px;
    font-weight:bold;
    padding-top:22px;
    letter-spacing: 0.5px;
 }
+
+.signup_container label{
+  margin-left:-2px;
+  font-size:12px;
+  margin-bottom:-16px;
+  margin-top:18px;
+}
+
+.signup_container input[type="text"] {
+  width: 315px;
+  height: 30px;
+  border: solid 1px rgba(0,0,0,0.10);
+  border-radius: 5px 5px 5px 5px;
+}
+    
+.signup_container input[type="password"] {
+   width: 315px;
+   height: 30px;
+   border: solid 1px rgba(0,0,0,0.10);
+   border-radius: 5px 5px 5px 5px;
+}
+
+.signup_container input:focus {
+    border:solid 0.5px rgba(0,0,0,0.12);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.riyoukiyakubox{
+  overflow:hidden;
+  padding-left:100px;
+  padding-top:20px;
+}
+
+.check_box{
+  margin-top:2px;
+  margin-right:5px;
+  float:left;
+}
+
+.kiyaku{
+  font-size:11px;
+}
+
+.kiyakuurl{
+  color:#249f80;
+}
+
+.kiyakuurl:hover{
+  color:#249f80;
+}
+
+.btn3{
+  margin-top:-80px;
+  background-color:#2cb696;
+  border-color:#2cb696;
+  font-weight:bold;
+  font-size:16px;
+  color:white;
+  height:50px;
+  width:320px;
+}
+
+.btn3:hover{
+  background-color:#2cb696;
+  border-color:#2cb696;
+  color:white;
+  text-decoration:none;
+}
+
+.social{
+  border-top: solid rgba(0,0,0,0.10) 1px;
+  text-align:center;
+  margin-top:-30px;
+  padding-top:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+input::placeholder {
+  color: rgba(3,0,0,0.12);
+  font-size: 0.8em;
+  font-weight:bold;
+}
+
 
 // ログインページ
 

@@ -1,3 +1,4 @@
+<title>note--つくる、つながる、とどける。</title>
 <body class="signuppage">
   
   <header>
@@ -7,7 +8,28 @@
   <main>
     <div class="container">
       <div class="signup_container">
-       <p>noteに登録する</p>
+       <p class="notetouroku">noteに登録する</p>
+     
+           <%=form_for(@user) do |f|%>
+            <%= f.label :ニックネーム（登録後に変更可能）%>
+            <%=f.text_field :name ,placeholder:"例：ノート君（任意）"%>
+            
+            <%=f.label:メールアドレス%>
+            <%=f.text_field :email,placeholder:"例：mail@note.mu"%>
+            
+            <%=f.label :パスワード%>
+            <%=f.password_field :password,placeholder:"例：６文字以上の半角英数"%>
+            
+            <div class="riyoukiyakubox">
+              <%=f.check_box :argument, checked:false , class:"check_box"%>
+              <p class="kiyaku"><%=link_to"利用規約","#",class:"kiyakuurl"%>に同意する</p> 
+          　</div>
+          　
+          　<%=f.submit "登録する（無料）",class:"btn btn-link btn3"%>
+          　
+          　<p class="social">ソーシャルアカウントで登録</p>
+          　
+　　　　  <%end%>
       </div>
     </div>
   </main>
