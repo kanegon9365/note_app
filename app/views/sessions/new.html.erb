@@ -1,0 +1,32 @@
+<title>note--つくる、つながる、とどける。</title>
+<body class="signuppage">
+  
+  <header>
+    <li><%=link_to image_tag("note.svg",alt:"noteの画像",class:"noteheader3"),root_path%></li>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="login_container">
+       <p class="login_p1">ログイン</p>
+       <p class="login_p2">cakesのアカウントをお持ちの方は<br>このページからログインできます。</p>
+       <p class="login_p3">メールアドレスでログイン</p>
+       
+         <%=form_for(:session, url: login_path) do |f|%>
+ 
+            <%=f.text_field :email,placeholder:"メールアドレス or noteID"%>
+            
+            <%=f.password_field :password,placeholder:"パスワード"%>
+            <%=link_to "パスワードを忘れた方","#",class:"login_p4"%>
+            <div class="beforebtn4">
+            <%=f.submit "ログイン", class:"btn btn-link btn4"%>
+            </div>
+         <%end%>
+         
+        <%=link_to "会員登録はこちら",signup_path,class:"login_p5"%>
+      
+      </div>
+    </div>
+  </main>
+  
+</body>

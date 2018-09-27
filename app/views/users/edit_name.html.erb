@@ -1,0 +1,22 @@
+<title>アカウント設定 | note</title>
+<%=render "layouts/header"%>
+<body>
+  <div class="settings">
+    <div class="row">
+      <%=render "layouts/edit_header"%>
+      
+      <div class="settingcontainer3">
+        
+        <%=form_for (@user) do |f|%>
+         <%=f.label :ニックネーム,class:"edname_label"%>
+         <%=f.text_field :name,class:'form-control'%>
+         
+         <%=link_to("キャンセル",edit_user_path(current_user),class:"btn btn-link btn8")%>
+         <%=f.submit "保存",class:"btn btn-link btn7"%>
+        
+        <%end%>
+      </div>
+      
+    </div>
+  </div>
+</body>

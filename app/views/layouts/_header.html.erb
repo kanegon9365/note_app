@@ -2,9 +2,35 @@
   <div class="container">
     <ul class="headerul">
       <li><%=link_to image_tag("note.svg",alt:"noteの画像",class:"noteheader1"),root_path%></li>
+      <%if current_user%>
+      <li><i class="fas fa-search icon4"></i></li>
+      <li><i class="fas fa-bell  icon5"></i></li>
+      
+      <ul class="ddmenu1">
+      <li class="icon6"><%=link_to  gravatar_for(@user, size: 30),"#"%>
+        <div class="container">
+          <ul>
+            <li class="mypagelink1"><%=link_to @user.name,user_path(current_user),class:"mypagelink-link"%></li>
+            <li class="mypagelink2"><%=link_to "マイページを表示",user_path(current_user),class:"mypagelink-link"%></li>
+            <li class="mypagelink3">ノートを一覧で管理</li>
+            <li class="mypagelink3">マガジンを一覧で管理</li>
+            <li class="mypagelink3">画像を一覧で管理</li>
+            <li class="mypagelink4">購入/スキをしたノート</li>
+            <li class="mypagelink5"><%=link_to "アカウント設定",edit_user_path(current_user),class:"mypagelink-link"%></li>
+            <li class="mypagelink5">ダッシュボード</li>
+            <li class="mypagelink6"><%=link_to "ログアウト",logout_path,method: :delete,class:"mypagelink-link"%></li>
+            <li><%=link_to("noteプレミアムサービス","#",class:"btn btn-link btn6")%></li>
+          </ul>
+        </div>
+      </li>
+      </ul>
+      
+      <li><%=link_to("ノートを投稿",logout_path,method: :delete,class:"btn btn-link btn5")%></li>
+      <%else%>
       <li><%=link_to("ログイン",login_path,class:"btn btn-link btn1")%></li>
-      <li><%=link_to("新規登録",signup_path,class:"btn btn-primary btn2")%></li>
+      <li><%=link_to("新規登録",signup_path,class:"btn btn-link btn2")%></li>
       <li><i class="fas fa-search icon1"></i></li>
+      <%end%>
     </ul>
   </div>
 </header>

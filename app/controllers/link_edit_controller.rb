@@ -1,0 +1,7 @@
+class LinkEditController < ApplicationController
+  
+  
+  
+ 
+  
+end
