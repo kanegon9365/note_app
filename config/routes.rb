@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get 'edit_password'
     end
   end
+  resources :notes, only:[:create,:destroy,:new]
   
   
   

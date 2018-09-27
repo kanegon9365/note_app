@@ -1,0 +1,12 @@
+<li id="note-<%= note.id %>">
+  <%= link_to gravatar_for(note.user, size: 50), note.user %>
+  <span><%= link_to note.user.name, note.user %></span>
+  <span><%= note.content %></span>
+  <span><%=image_tag note.picture.url if note.picture? %></span>
+  <span>
+    Posted <%= time_ago_in_words(note.created_at) %> ago.
+    <%if current_user?(note.user)%>
+     <%=link_to "削除",note,method: :delete, data:{confirm:"本当？"}%>
+    <%end%>
+  </span>
+</li>

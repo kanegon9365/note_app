@@ -20,10 +20,24 @@
          <li>ブログの詳細ページや投稿ページを作成</li>
          <li>railstutorialに書かれていることを一通り終わらせる</li>
          <li>（仮）検索アイコンがシュッと出てくるようにする</li>
+         <li>もっと見るバージョンのpaginateを探す</li>
          
        </ul>
+       <%if logged_in? %>
+       <div class="col-md-8">
+        <h3>Micropost Feed</h3>
+        <% if @feed_items.any? %>
+          <ol>
+            <%= render @feed_items %>
+          </ol>
+        <% end %>
+      </div>
+      <%else%>
+      <p>なにも66</p>
+      <%end%>
+      
      </main>
-
+     
     <aside class="sidebar">
       サイドバー
     </aside>
