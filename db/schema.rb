@@ -10,15 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_27_112244) do
-
-  create_table "aadds", force: :cascade do |t|
-    t.text "content"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_aadds_on_user_id"
-  end
+ActiveRecord::Schema.define(version: 2018_09_28_075203) do
 
   create_table "notes", force: :cascade do |t|
     t.text "content"
@@ -30,9 +22,14 @@ ActiveRecord::Schema.define(version: 2018_09_27_112244) do
     t.index ["user_id"], name: "index_notes_on_user_id"
   end
 
-  create_table "okkaas", force: :cascade do |t|
+  create_table "relationships", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["followed_id", "follower_id"], name: "index_relationships_on_followed_id_and_follower_id", unique: true
+    t.index ["followed_id"], name: "index_relationships_on_followed_id"
+    t.index ["follower_id"], name: "index_relationships_on_follower_id"
   end
 
   create_table "static_pages", force: :cascade do |t|

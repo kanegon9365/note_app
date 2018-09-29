@@ -5,11 +5,27 @@
   </head>
 </html>
 <%=render "layouts/header"%>
+<% @user ||= current_user %>
+    <% @user ||= current_user %>
+      <div class="stats">
+        <a href="<%= following_user_path(@user) %>">
+          <strong id="following" class="stat">
+            <%= @user.following.count %>
+          </strong>
+          following
+        </a>
+        <a href="<%= followers_user_path(@user) %>">
+          <strong id="followers" class="stat">
+            <%= @user.followers.count %>
+          </strong>
+          followers
+        </a>
+      </div>
 <div class="col-md-8">
+   <%=render 'follow_form' if logged_in?%>
     <% if @user.notes.any? %>
       <ol>
         <%= render @notes %>
       </ol>
-      
     <% end %>
-  </div>
+</div>

@@ -8,14 +8,17 @@ Rails.application.routes.draw do
   post '/login',to:"sessions#create"
   delete '/logout',to:"sessions#destroy"
   
+  # memberはゆーざーIDが含まれているurlを扱うようになる.collectionｈどうだろうか
   resources :users do
-    member do
+    member do    
       get 'edit_name'
       get 'edit_email'
       get 'edit_password'
+      get :following, :followers
     end
   end
   resources :notes, only:[:create,:destroy,:new]
+  resources :relationships, only:[:create,:destroy]
   
   
   
