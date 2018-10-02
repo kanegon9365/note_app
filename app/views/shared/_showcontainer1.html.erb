@@ -1,0 +1,35 @@
+<div class="showcontainer1">
+  <% @user ||= current_user %>
+  <div class="user_profile">
+    <%=link_to gravatar_for(@user, size: 100),class:"profile0"%>
+    <ul>
+      <li class="profile1"><%=@user.name%> 
+         <span class="icon7"><i class="fas fa-caret-down"></i></span>
+         <span><%=render 'follow_form' if logged_in?%></span>
+      </li>
+      <li class="profile2">都内の大学一年生です. Twitter【＠nikihiro555】</li>
+    </ul>
+    
+      <div class="showfollow">
+        <a href="<%= following_user_path(@user) %>">
+          <strong class="follow1"><%= @user.following.count %></strong>
+        <span class="follow2">フォロー</span>
+        </a>
+        <a href="<%= followers_user_path(@user) %>">
+          <strong class="follow1"> <%= @user.followers.count%> </strong>
+          <span class="follow2">フォロワー</span>
+        </a>
+        <span class="follow3"><i class="fab fa-twitter"></i></span>
+        <span class="follow3"><i class="fas fa-rss"></i></span>
+      </div>
+               
+    
+  </div>
+  <div class="showcontainer1_under">
+    <ul>
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">マガジン</a></li>
+      <li><a href="#">アーカイブ</a></li>
+    </ul>
+  </div>
+</div>

@@ -10,8 +10,8 @@ class Note < ApplicationRecord
   
   
   def picture_size
-    if picture_size > 5.megabytes
-     errors.add(:picture,"should be less than 5mb")
+    if picture.size > 5.megabytes
+      errors.add(:picture, "should be less than 5MB")
     end
   end
   

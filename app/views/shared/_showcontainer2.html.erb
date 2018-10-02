@@ -1,0 +1,10 @@
+<div class="showcontainer2">
+  <div class="notepost">
+    <% if @user.notes.any? %>
+      <ol>
+        <%= render @notes %>
+      </ol>
+    <% end %>
+  </div>
+  
+</div>

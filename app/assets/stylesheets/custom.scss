@@ -193,11 +193,12 @@ ul.ddmenu1 .container ul li {
   font-weight:bold;
   font-size:13px;
   color:white;
-  width:110px;
-  height:32px;
+  width:114px;
+  line-height:16px;
   margin-left:80px;
   position:absolute;
   margin-top:-31px;
+  
 }
 
 .btn5:hover{
@@ -858,3 +859,141 @@ input:checked + .slider:before {
 }
 
 
+// ユーザー詳細ページ
+
+.showcontainer1{
+  background-color:white;
+  border-top: solid 2px rgba(0,0,0,0.05);
+  position:relative;
+}
+
+.user_profile{
+  margin-left:210px;
+  margin-top:30px;
+  
+  
+}
+
+.icon7{
+  margin-left:700px;
+  color:rgba(0,0,0,0.20);
+}
+
+.profile_follow{
+ margin-left:510px;
+ margin-top:-55px;
+ position:absolute;
+}
+
+.btn8{
+  color:white;
+  font-weight:bold;
+  background-color:#2cb696;
+  width:146px;
+  height:40px;
+  font-size:15px;
+}
+
+.btn8:hover{
+  color:white;
+  background-color:#2cb696;
+}
+
+.showcontainer1 ul{
+  list-style-type:none;
+  display:inline-block;
+  margin-left:-20px;
+}
+
+.profile1{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.profile2{
+  font-size:15px;
+  
+}
+
+.showfollow{
+  margin-left:130px;
+  margin-top:-20px;
+}
+
+.follow1{
+  color:black;
+  font-size:17px;
+}
+
+.follow2{
+  color:#787c7b;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.follow3{
+  color:#A8ABB1;
+  font-size:18px;
+  position:relative;
+  margin-left:15px;
+}
+
+.showcontainer1_under{
+  width: 940px;
+  border-top: solid 1px rgba(0,0,0,0.05);
+  margin-top:50px;
+  margin-left:200px;
+}
+
+.showcontainer1_under ul{
+  overflow:hidden
+}
+
+// 初期値でborderのカラムと値を入れておくとカラム落ちを防げる
+.showcontainer1_under ul li{  
+  float:left;
+  list-style-type:none;
+  font-size:13px;
+  width:80px;
+  line-height:20px;
+  padding-left:15px;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-bottom: 2px solid white;
+  color:black;
+  
+}
+
+.showcontainer1_under ul li a{
+  color:black;
+  text-decoration:none;
+}
+
+.showcontainer1_under ul li:last-child{
+  margin-left:640px;
+  padding-left:8px;
+  font-size:13px;
+}
+
+.showcontainer1_under ul li:hover{
+  border-bottom: 2px #660000 solid;
+  padding-bottom:-1px;
+  font-weight:bold;
+}
+
+
+// ユーザー詳細ページnote部分
+
+.showcontainer2{
+  background-color:#f7f9f9;
+  height:1000px;
+  padding-top:-20px;
+}
+
+.notepost{
+  padding-top:200px;
+}
+
+
+
+// rgba(0,0,0,0.05) #787c7b
