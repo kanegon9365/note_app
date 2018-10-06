@@ -17,7 +17,7 @@ Rails.application.routes.draw do
       get :following, :followers
     end
   end
-  resources :notes, only:[:create,:destroy,:new]
+  resources :notes, only:[:create,:destroy,:new,:edit,:update]
   resources :relationships, only:[:create,:destroy]
 end
   
