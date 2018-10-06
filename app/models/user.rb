@@ -18,7 +18,7 @@ class User < ApplicationRecord
                     uniqueness: {case_sensitive: false}
   has_secure_password
   validates :password, presence:true, length: {minimum:6},allow_nil:true
-            
+
   
   def feed
     following_ids = "SELECT followed_id FROM relationships
@@ -26,6 +26,8 @@ class User < ApplicationRecord
     Note.where("user_id IN (#{following_ids})
                      OR user_id = :user_id", user_id: id)
   end
+  
+  
   
   #user follow
   def follow(other_user)
@@ -41,5 +43,6 @@ class User < ApplicationRecord
   def following?(other_user)
     following.include?(other_user)
   end
- 
+  
+  
 end

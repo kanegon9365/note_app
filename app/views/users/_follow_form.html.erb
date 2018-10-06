@@ -5,13 +5,13 @@
       <%= form_for(current_user.active_relationships.find_by(followed_id: @user.id),
                html: { method: :delete },
                remote: true) do |f| %>
-      <%= button_tag sanitize('<i class="fas fa-check"></i>&nbsp;&nbsp;フォロー中'), :type => "submit" ,class: "btn btn8" %>
+      <%= button_tag sanitize('<i class="fas fa-check"></i>&nbsp;&nbsp;フォロー中'), :type => "submit" ,class: "btn btn9" %>
      <% end %>
      
   <% else %>
      <%= form_for(current_user.active_relationships.build, remote: true) do |f| %>
       <div><%= hidden_field_tag :followed_id, @user.id %></div>
-      <%= button_tag sanitize('<i class="fas fa-user-plus"></i>&nbsp;&nbsp;フォローする'), :type => "submit" ,class: "btn btn8" %>
+      <%= button_tag sanitize('<i class="fas fa-user-plus"></i>&nbsp;&nbsp;フォローする'), :type => "submit" ,class: "btn btn9" %>
      <% end %>
   <% end %>
   </div>
