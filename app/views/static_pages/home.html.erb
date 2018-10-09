@@ -5,20 +5,17 @@
 <%=render "layouts/navbar2"%>
 
 <main>
-  
-   <%if logged_in? %>
+  <%if logged_in? %>
+   <div  class="postcontainer">
     <% if @feed_items.any? %>
-    
       <ol>
         <%= render @feed_items %>
       </ol>
-     
-    <% end %>
-  <%else%>
+    </div>
+   <% end %>
+ <%else%>
   <%=render "layouts/navbar3"%>
-  <p>なにも66</p>
   <%end%>
-
 </main>
 
   

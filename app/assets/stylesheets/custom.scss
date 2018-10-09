@@ -297,7 +297,7 @@ ul.ddmenu1 .container ul li {
 }
 
 // メイン
-main{
+.postcontainer{
   background-color:#f7f9f9;
   width:100%;
   padding-top:18px;
@@ -305,14 +305,119 @@ main{
 
 
 
-main ol li{
+.postcontainer ol li{
   border:rgba(0,0,0,0.05) solid 2px;
   background-color:white;
   width:580px;
   margin:auto;
   margin-bottom:15px;
+  list-style-type:none;
+  
 }
 
+.postprofile{
+  
+  margin-left:18px;
+}
+
+.postname{
+  font-size:12px;
+  font-weight:bold;
+  color:black;
+  position:absolute;
+  padding-top:18px;
+}
+
+.postname:hover{
+  color:black;
+  text-decoration:none;
+}
+
+#postday{
+  font-size:11px;
+  line-height:80px;
+  
+}
+
+#postimage{
+  display:inline-block;
+  position:relative;
+  padding-bottom:20px;
+}
+
+.posttitle{
+  font-size:20px;
+  color:black;
+  margin-left:18px;
+  position:relative;
+  margin-bottom:20px;
+  display:inline-block
+}
+
+.posttitle:hover{
+  color:black;
+  text-decoration:none;
+}
+
+#posttext{
+  font-size:14px;
+  margin-left:18px;
+  margin-right:18px;
+  display:inline-block;
+  line-height:27px;
+  border-bottom:solid 1px rgba(0,0,0,0.11);
+  padding-bottom:24px;
+}
+
+.postfooter{
+  overflow:hidden;
+}
+
+.postfooter1{
+  float:left;
+  position:relative;
+  font-size:20px;
+  color:silver;
+}
+
+.postfooter2{
+  float:left;
+  position:relative;
+  margin-right:50px;
+  margin-top:15px;
+  font-size:20px;
+  color:silver;
+}
+
+.btnheart{
+  color:silver;
+  font-size:18px;
+  position:relative;
+  margin-left:8px;
+  margin-top:14px;
+}
+
+
+
+.btnheartcount{
+  margin-right:30px;
+  margin-left:12px;
+  color:gray;
+  
+}
+
+.btnheartcount:hover{
+  color:gray;
+  text-decoration:none;
+}
+
+.postfooter3{
+  color:#249f80;
+  font-size:12px;
+  margin-left:480px;
+  margin-top:22px;
+  margin-bottom:25px;
+}
 
 // ヘルプ
 
@@ -387,14 +492,14 @@ main ol li{
 }
 
 .noteheader2{
-  margin-top:35px;
-  margin-left:520px;
+  margin-top:-60px;
+  margin-left:530px;
   position:absolute;
 }
 
 .signup_container{
-  margin-top:90px;
-  margin-left:480px;
+  margin-top:110px;
+  margin-left:370px;
   width:360px;
   height:700px;
   background-color:#FFF;
@@ -470,6 +575,7 @@ main ol li{
   height:50px;
   width:320px;
   display:block;
+  margin-top:-50px;
 }
 
 .btn3:hover{
@@ -497,14 +603,14 @@ input::placeholder {
 // ログインページ
 
 .noteheader3{
-  margin-top:35px;
+  margin-top:-55px;
   margin-left:540px;
   position:absolute;
 }
 
 .login_container{
-  margin-top:90px;
-  margin-left:490px;
+  margin-top:110px;
+  margin-left:370px;
   width:360px;
   height:450px;
   background-color:#FFF;
@@ -995,7 +1101,7 @@ input:checked + .slider:before {
 }
 
 .notepost{
-  padding-top:200px;
+  padding-top:20px;
 }
 
 

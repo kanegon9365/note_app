@@ -1,16 +1,16 @@
 <% if note.iine?(current_user) %>  
   <%= form_for(note.likes.find_by(user_id: current_user.id), method: :delete, remote: true) do |f| %>
     <%=button_tag :type => "submit", :class=>"btn btn-link" do %>
-     <i class="fas fa-heart"></i>
-      <%= content_tag :span, note.likes.count, class: "glyphicon glyphicon-heart" %>
+     <span><i class="fas fa-heart btnheart"></i></span>
+      <span class="btnheartcount"><%= content_tag :span, note.likes.count %></span>
     <% end %>
   <% end %>
 <% else %>
   <%= form_for(note.likes.build, remote: true) do |f| %>
     <div><%= hidden_field_tag :note_id, note.id %></div>
     <%= button_tag :type => "submit", :class =>"btn btn-link" do %>
-      <i class="far fa-heart"></i>
-      <%= content_tag :span, note.likes.count, class: "glyphicon glyphicon-heart-empty" %>
+      <i class="far fa-heart btnheart"></i>
+      <span class="btnheartcount"><%= content_tag :span, note.likes.count%></span>
     <% end %>
   <% end %>
 <% end %>
