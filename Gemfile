@@ -21,6 +21,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'devise'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'bootstrap-wysihtml5-rails'
 
 group :development, :test do
   gem 'sqlite3'

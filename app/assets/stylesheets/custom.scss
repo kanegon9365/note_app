@@ -297,19 +297,22 @@ ul.ddmenu1 .container ul li {
 }
 
 // メイン
-
 main{
-  float:left;
+  background-color:#f7f9f9;
+  width:100%;
+  padding-top:18px;
 }
 
-.mainside{
-  overflow:hidden;
+
+
+main ol li{
+  border:rgba(0,0,0,0.05) solid 2px;
+  background-color:white;
+  width:580px;
+  margin:auto;
+  margin-bottom:15px;
 }
 
-.sidebar{
-  padding-top:1em;
-  padding-left:500px;
-}
 
 // ヘルプ
 

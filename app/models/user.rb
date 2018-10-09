@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :notes, dependent: :destroy
+  has_many :likes, dependent: :destroy
   #能動的関係はフォローした人のidでmodelの関係性を保つ A→B A→C の場合Aのfollower_idを用いることで関係性が作成できる
   has_many :active_relationships,  class_name:  "Relationship",
                                    foreign_key: "follower_id",

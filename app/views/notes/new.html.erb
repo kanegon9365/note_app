@@ -10,13 +10,14 @@
       <%= form_for(@note) do |f| %>
           <%= f.text_field :title%>
         <div>
-          <%= f.text_field :content, placeholder: "Compose new micropost..." %>
+          <%= f.text_area :content, placeholder: "Compose new micropost..." %>
         </div>
         <%= f.submit "Post", class: "btn btn-primary" %>
         <span>
           <%= f.file_field :picture , accept:"image/jpeg,image/git,image/png"%>
         </span>
       <% end %>
+      
       
          <script type="text/javascript">
           $('#note_picture').bind('change', function() {

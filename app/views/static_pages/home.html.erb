@@ -3,31 +3,24 @@
 <%=render "layouts/header"%>
 <%=render "layouts/navbar1"%>
 <%=render "layouts/navbar2"%>
-<%=render "layouts/navbar3"%>
 
-<section>
-    <div class="container mainside" >
-      <main>
-       
-       <%if logged_in? %>
-       <div class="col-md-8">
-        <h3>Micropost Feed</h3>
-        <% if @feed_items.any? %>
-          <ol>
-            <%= render @feed_items %>
-          </ol>
-        <% end %>
-      </div>
-      <%else%>
-      <p>なにも66</p>
-      <%end%>
-      
-     </main>
+<main>
+  
+   <%if logged_in? %>
+    <% if @feed_items.any? %>
+    
+      <ol>
+        <%= render @feed_items %>
+      </ol>
      
-    <aside class="sidebar">
-      サイドバー
-    </aside>
-  </div>
+    <% end %>
+  <%else%>
+  <%=render "layouts/navbar3"%>
+  <p>なにも66</p>
+  <%end%>
+
+</main>
+
   
   
-</section>
+
